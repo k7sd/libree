@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Store</title>
+ 
+  <link rel="icon" type="dark-space-png ico" href="/png/1.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100&display=swap" rel="stylesheet">
+  
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&display=swap" rel="stylesheet">
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@700&display=swap" rel="stylesheet">
+  
+
+  <script>
+    var menuButton = document.getElementById("menuButton");
+    var menu = document.getElementById("menu");
+    menuButton.addEventListener("click", function() {
+      if (menu.style.display === "none") {
+        menu.style.display = "block";
+      } else {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+  
+  <style>
+  
+    .button {
+      display: inline-block;
+      border-radius: 7px;
+      border: none;
+      background: #000000;
+      color: white;
+      font-family: inherit;
+      text-align: center;
+      font-size: 13px;
+      box-shadow: 0px 14px 56px -11px #91c4fa85;
+      width: 10em;
+      padding: 1em;
+      transition: all 0.4s;
+      cursor: pointer;
+     }
+     
+     .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.4s;
+     }
+     
+     .button span:after {
+      content: ' For Store';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.7s;
+     }
+     
+     .button:hover span {
+      padding-right: 3.55em;
+     }
+     
+     .button:hover span:after {
+      opacity: 4;
+      right: 0;
+     }
+  
+  
+  
+  
+  
+     .light-button button.bt {
+      position: relative;
+      height: 96px;
+      display: flex;
+      align-items: flex-end;
+      outline: none;
+      background: none;
+      border: none;
+    }
+    
+    .light-button button.bt .button-holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      width: 100px;
+      background-color: #0a0a0a;
+      border-radius: 5px;
+      color: #0f0f0f;
+      font-weight: 700;
+      transition: 300ms;
+      outline: #0f0f0f 2px solid;
+      outline-offset: 20;
+    }
+    
+    .light-button button.bt .button-holder svg {
+      height: 50px;
+      fill: #0f0f0f;
+      transition: 300ms;
+    }
+    
+    .light-button button.bt .light-holder {
+      position: absolute;
+      height: 200px;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .light-button button.bt .light-holder .dot {
+      position: absolute;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #0a0a0a;
+      border-radius: 10px;
+      z-index: 2;
+    }
+    
+    .light-button button.bt .light-holder .light {
+      position: absolute;
+      top: 0;
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+      background: transparent;
+    }
+    
+    .light-button button.bt:hover .button-holder svg {
+      fill: rgb(23, 21, 128);
+    }
+    
+    .light-button button.bt:hover .button-holder {
+      color: rgb(42, 51, 142);
+      outline: rgb(36, 41, 100) 2px solid;
+      outline-offset: 2px;
+    }
+    
+    .light-button button.bt:hover .light-holder .light {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(180deg, rgba(88, 101, 242, 1) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    }
+  
+
+  
+    .light-button1 button.bt {
+      position: relative;
+      height: 96px;
+      display: flex;
+      align-items: flex-end;
+      outline: none;
+      background: none;
+      border: none;
+    }
+    
+    .light-button1 button.bt .button-holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      width: 100px;
+      background-color: #0a0a0a;
+      border-radius: 5px;
+      color: #0f0f0f;
+      font-weight: 700;
+      transition: 300ms;
+      outline: #0f0f0f 2px solid;
+      outline-offset: 20;
+    }
+    
+    .light-button1 button.bt .button-holder svg {
+      height: 50px;
+      fill: #0f0f0f;
+      transition: 300ms;
+    }
+    
+    .light-button1 button.bt .light-holder {
+      position: absolute;
+      height: 200px;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .light-button1 button.bt .light-holder .dot {
+      position: absolute;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #0a0a0a;
+      border-radius: 10px;
+      z-index: 2;
+    }
+    
+    .light-button1 button.bt .light-holder .light {
+      position: absolute;
+      top: 0;
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+      background: transparent;
+    }
+    
+    .light-button1 button.bt:hover .button-holder svg {
+      fill: rgb(255, 255, 255);
+    }
+    
+    .light-button1 button.bt:hover .button-holder {
+      color: rgb(19, 176, 187);
+      outline: rgb(255, 0, 0) 2px solid;
+      outline-offset: 2px;
+    }
+    
+    .light-button1 button.bt:hover .light-holder .light {
+      background: rgb(255, 251, 251);
+      background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    }
+  
+
+
+  
+    .light-button2 button.bt {
+      position: relative;
+      height: 96px;
+      display: flex;
+      align-items: flex-end;
+      outline: none;
+      background: none;
+      border: none;
+    }
+    
+    .light-button2 button.bt .button-holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      width: 100px;
+      background-color: #0a0a0a;
+      border-radius: 5px;
+      color: #0f0f0f;
+      font-weight: 700;
+      transition: 300ms;
+      outline: #0f0f0f 2px solid;
+      outline-offset: 20;
+    }
+    
+    .light-button2 button.bt .button-holder svg {
+      height: 50px;
+      fill: #0f0f0f;
+      transition: 300ms;
+    }
+    
+    .light-button2 button.bt .light-holder {
+      position: absolute;
+      height: 200px;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .light-button2 button.bt .light-holder .dot {
+      position: absolute;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #0a0a0a;
+      border-radius: 10px;
+      z-index: 2;
+    }
+    
+    .light-button2 button.bt .light-holder .light {
+      position: absolute;
+      top: 0;
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+      background: transparent;
+    }
+    
+    .light-button2 button.bt:hover .button-holder svg {
+      fill: rgb(230, 16, 16);
+    }
+    
+    .light-button2 button.bt:hover .button-holder {
+      color: rgb(106, 9, 9);
+      outline: rgba(183, 8, 8, 0.605) 2px solid;
+      outline-offset: 2px;
+    }
+    
+    .light-button2 button.bt:hover .light-holder .light {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(180deg, rgb(207, 19, 19) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    }
+  
+
+
+
+    
+    li {color: #e8ecf0;}
+  
+   #h11 {
+
+    color: #fffaface;
+    font-family: 'Aref Ruqaa', serif;
+  
+   
+   }
+  
+  
+   .fade-in {
+    animation: fadeIn 6s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  .fa {
+    animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .sd {
+    animation: fadeIn 3s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  .df {
+    animation: fadeIn 3s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }}
+  
+    i {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    i {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    
+    a:hover {
+      color: #f00;
+    }
+  
+  
+
+    .menuButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 13%;
+      color: #671616;
+      width: 3.5em;
+      height: 3.5em;
+      border-radius: 0.5em;
+      background: #171717;
+      border: 1px solid #171717;
+      transition: all .3s;
+      box-shadow: inset 4px 4px 12px #3a3a3a,
+                 inset -4px -4px 12px #000000;
+    }
+    
+    .menuButton:hover {
+      border: 1px solid rgb(255, 255, 255);
+    }
+    
+    .menuButton:active {
+      color: #ffffff;
+      box-shadow: 6px 6px 12px #ffffff,
+                 -6px -6px 12px #ffffff;
+    }
+    
+    
+    .menuButton span {
+      width: 30px;
+      height: 4px;
+      background: rgb(255, 255, 255);
+      border-radius: 100px;
+      transition: 0.3s ease;
+    }
+    
+    input[type]:checked ~ span.top {
+      transform: translateY(290%)rotate(45deg);
+      width: 40px;
+    }
+    
+    input[type]:checked ~ span.bot {
+      transform: translateY(-270%) rotate(-45deg);
+      width: 40px;
+      box-shadow: 0 0 10px #f9f9f9;
+    }
+    
+    input[type]:checked ~ span.mid {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+  
+    body {background-color: #2b2f36;}
+</style>
+
+
+
+</head>
+
+<body>
+
+<button id="menuButton">menu </button>
+<ul id="menu"  style="display: none;">
+
+  <li><a href="index.html" style="color: white;">Home page</a></li>
+
+  <li><a href="about.html" style="color: white;" >HEN</a></li>
+
+  <li><a href="download.html" style="color: white;" >Update</a></li>
+</ul>
+
+
+
+<body>
+  <center>
+    <div id="h11" h1  class="df" > STORES FOR PS3 <h1> </div>
+  </center>
+
+  <h3 style="color: #fbfdffbe ;">لماذا موقع دارك سبيس لتحميل المكاتب</h3>
+
+    <i>
+    
+    <li>
+      ◉ الاول من نوعه
+    </li>
+    <BR>
+    <li>
+      ◉ العديد من المكاتب
+    </li>
+    <BR>
+    <li>
+      ◉ تحديث مستمر
+    </li>
+    <BR>
+    <li>
+      ◉ يختصر الوقت
+    </li>
+
+  </i>
+<br>
+<br>
+<br>
+<br>
+
+    
+  <center>
+    <a href="https://www.mediafire.com/file/nr6cxnf48g6f6x5/Wiki+Store+For+HEN+By+Dark+Space.pkg/file ">
+      <button class="button , fa" style="vertical-align:middle">
+        <span>Download</span>
+      </button>
+    </a>
+  </center>
+
+
+
+
+
+
+
+
+
+
+<p style="color: dimgrey;">
+
+</p>
+
+
+
+  <h4>Dark Space حقوق النشر لي ©سيرفر</h4>
+</body>
+</html>
